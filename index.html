@@ -1,77 +1,180 @@
+<!-- homepage -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WORN</title>
+
+    <title>WORN| Home</title>
+
+    <!-- This is the small icon shown in the browser tab -->
+    <link rel="icon" href="images/logo.png">
+
+    <!-- Our CSS file -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
-    <!-- Nav bar -->
-     <nav>
-        <a href="index.html">WORN</a>
 
-        <div>
-            <a href="index.html">Home</a>
-            <a href="products.html">Products</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-            <a href="cart.html">Cart</a>
+    <!-- ================= NAVIGATION ================= -->
+
+    <header>
+        <nav class="navbar">
+
+            <!-- Website logo -->
+            <a href="index.html" class="logo">
+                WORN
+            </a>
+
+            <!-- Navigation links -->
+            <div class="nav-links">
+
+                <a href="index.html">Home</a>
+
+                <a href="products.html">Products</a>
+
+                <a href="#about">About</a>
+
+                <a href="#contact">Contact</a>
+
+                <a href="cart.html">
+                    Cart (<span id="cart-count">0</span>)
+                </a>
+
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <p class="small-text">WELCOME TO WORN</p>
+
+            <h1>
+                Discover Products
+                <span>You'll Love.</span>
+            </h1>
+
+            <p>
+                Shop quality products at affordable prices.
+                Simple shopping, made for you.
+            </p>
+
+            <!-- This button takes the user to the products page -->
+            <a href="products.html" class="button">
+                Shop Now
+            </a>
+
         </div>
-     </nav>
 
-     <!-- intro -->
-      <section class="hero">
-        <div class="hero-content">
-            <p>WEAR WHAT YOU BELIEVE.</p>
-            <h1>Style with purpose.</h1>
-            <p>Discover pieces made for everyday expression, confidence, and individuality.</p>
-            <a href="products.html">Shop Now</a>
+
+        <!-- Simple hero visual instead of downloading a photo -->
+        <div class="hero-box">
+            <div class="shopping-icon">
+                🛍️
+            </div>
         </div>
-      </section>
 
-      <!-- featured products -->
-       <section class="featured-products">
-        <div class="section-heading">
-            <p>OUR PICKS</p>
+    </section>
+
+
+    <!-- ================= FEATURED PRODUCTS ================= -->
+
+    <section class="section">
+
+        <div class="section-title">
+
+            <p class="small-text">OUR COLLECTION</p>
+
             <h2>Featured Products</h2>
-            <p>Discover some of our favorites.</p>
+
+            <p>
+                Take a look at some of our products.
+            </p>
+
         </div>
 
-        <div id="featured-products-container">
-            <!-- js works here -->
+
+        <!-- JavaScript will put products inside this div -->
+        <div id="featured-products" class="product-grid">
+
+            <p>Loading products...</p>
+
         </div>
-       </section>
 
-       <!-- about -->
-        <section id="about" class="about">
-            <div class="about-content">
-                <p>ABOUT WORN</p>
-                <h2>Wear what you believe.</h2>
-                <p>
-                    WORN is more than clothing. It's a space for self-expression, confidence, and individuality.
-                     Every piece is chosen to help you wear your identity with purpose.
-                </p>
-            </div>
-        </section>
 
-        <!-- Contact info -->
-         <section id="contact" class="contact">
-            <div class="contact-info">
-                <p>GET IN TOUCH</p>
-                <h2>Let's connect.</h2>
-                <p>
-                    Have a question about an order or just want to say hello?
-                    We'd love to hear from you.
-                </p>
-            </div>
-         </section>
+        <div class="center">
 
-         <!-- footer -->
-          <footer>
-            <p>WORN</p>
-            <p>Wear what you believe.</p>
-            <p>&copy; 2026 WORN. All rights reserved.</p>
-          </footer>
+            <a href="products.html" class="button">
+                View All Products
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about" class="about-section">
+
+        <div class="about-content">
+
+            <p class="small-text">ABOUT US</p>
+
+            <h2>Shopping Made Simple.</h2>
+
+            <p>
+                WORN is an online store created to make
+                finding and buying everyday products simple
+                and convenient.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="contact-section">
+
+        <p class="small-text">CONTACT US</p>
+
+        <h2>Have a question?</h2>
+
+        <p>
+            We would love to hear from you.
+        </p>
+
+        <a href="mailto:worn@example.com" class="button">
+            Contact Us
+        </a>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <h3>WORN</h3>
+
+        <p>
+            © 2026 WORN. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
 </body>
+
 </html>

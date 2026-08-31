@@ -1,0 +1,199 @@
+🎯 WHAT AM I BUILDING?
+
+A responsive e-commerce website where users can browse, search, filter, sort, view product details, add products to a cart, change quantities, checkout, and receive an order confirmation.
+
+🧱 HTML — STRUCTURE
+
+HTML = structure/skeleton of the website.
+
+Used for:
+
+Navigation
+Headings/text
+Images
+Buttons
+Product cards
+Search/filter controls
+Cart
+Checkout form
+
+Say: “I used HTML to create the structure and content of my website.”
+
+🎨 CSS — DESIGN
+
+CSS = how the website looks.
+
+Used for:
+
+Colors
+Fonts
+Spacing
+Layout
+Buttons
+Product cards
+Hover effects
+Forms
+Responsive design
+
+Responsive = website adapts to desktop, tablet and mobile.
+Uses media queries.
+
+Say: “I used CSS for the visual design and responsive layout.”
+
+⚙️ JAVASCRIPT — FUNCTIONALITY
+
+JavaScript = makes the website interactive.
+
+Used for:
+
+Search
+Filtering
+Sorting
+Fetching products
+Product details
+Cart
+Quantities
+Totals
+Form validation
+Updating the page
+
+Say: “I used JavaScript to add functionality and user interaction.”
+
+🌐 API
+
+API = allows my website to communicate with another service and retrieve data.
+
+My website → API → product data → JavaScript → webpage.
+
+🧪 DUMMYJSON
+
+DummyJSON = the external API providing my product data.
+
+Instead of creating a backend/database myself, I retrieve products from DummyJSON. The project specifically requires using the API instead of hardcoding all products.
+
+Say: “I used the DummyJSON API to retrieve product data and dynamically display it on my website.”
+
+📡 fetch()
+
+Fetch = request/get data from the API.
+
+⏳ async/await
+
+Allows JavaScript to wait for the API response.
+
+🚨 try/catch
+
+Handles errors if something goes wrong with the API request.
+
+⏳ LOADING STATE
+
+Shows “Loading products…” while waiting for the API.
+
+🔎 filter()
+
+Keeps only items that match a condition.
+
+Used for:
+
+Search
+Category filtering
+↕️ sort()
+
+Arranges items.
+
+Used for:
+
+Price low → high
+Price high → low
+Name A → Z
+Name Z → A
+🔍 find()
+
+Finds one specific item.
+
+Used to find a product by its ID.
+
+🔄 map()
+
+Transforms each item into something else.
+
+Can be used to create product-card HTML.
+
+🔁 forEach()
+
+Does something for every item.
+
+➕ reduce()
+
+Combines many values into one result.
+
+Used to calculate the cart total.
+
+🌳 DOM
+
+DOM = JavaScript's way of interacting with the HTML.
+
+Important methods:
+
+querySelector()
+querySelectorAll()
+getElementById()
+textContent
+innerHTML
+classList
+🖱️ EVENTS
+
+Events = things the user does.
+
+click → buttons
+input → search
+change → dropdowns
+submit → checkout form
+📦 ARRAY
+
+Stores multiple things.
+
+products = [product1, product2, product3]
+
+🧍 OBJECT
+
+Describes one thing.
+
+product = { id, title, price }
+
+🧠 VARIABLE
+
+A named container that stores information.
+
+🔀 CONDITION
+
+Allows JavaScript to make decisions.
+
+if (...) { ... }
+
+🧩 FUNCTION
+
+A reusable set of instructions.
+
+🏹 ARROW FUNCTION
+
+A shorter/modern way to write a function.
+
+💾 LOCALSTORAGE
+
+Browser storage used to remember the cart.
+
+Add product → save cart → refresh → cart remains.
+
+setItem() → save
+getItem() → retrieve
+removeItem() → delete
+📋 JSON
+
+Used when storing/transferring data.
+
+JSON.stringify() → convert data for storage
+JSON.parse() → convert it back
+🛒 CART FLOW
+
+Add to Cart → cart array → localStorage → cart counter → quantity changes → total → checkout → validation → confirmation → clear cart.
